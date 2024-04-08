@@ -1,0 +1,88 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    background-color: hsl(0, 0%, 8%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;  
+    color: hsl(0, 0%, 100%);
+}
+
+.card .inner{
+    background-color: hsl(0, 0%, 12%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.card .inner .avatar{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.card .inner .avatar img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.card .inner .header{
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.card .inner .header p{
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.card .inner .info{
+    margin-block: 15px;
+    font-size: 14px;
+}
+
+.card .inner .sm{
+    width: 100%;
+}
+
+.card .inner .sm div{
+    margin-block: 10px;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 10px;
+}
+
+.card .inner .sm a{
+    padding: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%); 
+    font-weight: 600;
+}
+
+.card .inner .sm div a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    border-radius: 10px;
+}
+
+@media (min-width: 375px){
+    sm-275{
+        width: 375px;
+    }
+}
+
+@media (min-width){
+    lg-1440{
+        width: 1440px;
+    }
+}
